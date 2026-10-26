@@ -18,8 +18,8 @@ Methodology:
 Outputs Generated:
     1. ipo_5yr_summary_metrics.csv       (Headline summary metrics table)
     2. ipo_5yr_return_buckets.csv        (Empirical 5-year return outcome spectrum)
-    3. ipo_5yr_skew_chart.png            (Financial Times light editorial chart, 300 DPI)
-    4. ipo_5yr_skew_chart_dark.png       (Wall Street Journal / Bloomberg dark chart, 300 DPI)
+    3. ipo_5yr_skew_chart.png            (Light chart, 300 DPI)
+    4. ipo_5yr_skew_chart_dark.png       (Dark chart, 300 DPI)
     5. article_stats_summary.txt         (Publication summary block & portfolio breakdown)
 ========================================================================================
 """
@@ -311,7 +311,7 @@ def compute_portfolio_simulation() -> Dict[str, Any]:
 
 
 # --------------------------------------------------------------------------------------
-# 6. EDITORIAL CHART RENDERER (FINANCIAL TIMES & WSJ STYLING)
+# 6. EDITORIAL CHART RENDERER (LIGHT & DARK STYLING)
 # --------------------------------------------------------------------------------------
 def create_editorial_chart(theme: str = "ft_light",
                            output_filename: str = "ipo_5yr_skew_chart.png",
@@ -320,8 +320,8 @@ def create_editorial_chart(theme: str = "ft_light",
     Renders an authentic, human-designed financial editorial chart.
     
     Themes:
-    - 'ft_light': Financial Times warm bisque / ivory editorial layout.
-    - 'wsj_dark': Modern Wall Street Journal / Bloomberg Terminal executive dark layout.
+    - 'ft_light': Light theme layout.
+    - 'wsj_dark': Dark theme layout.
     """
     if theme == "ft_light":
         bg_canvas = "#FDFBF7"       # Warm ivory / newsprint cream
@@ -352,7 +352,7 @@ def create_editorial_chart(theme: str = "ft_light",
         callout_bg = "#F8F5EE"
         callout_border = "#DDD7CA"
 
-    else:  # wsj_dark / Bloomberg Executive
+    else:  # wsj_dark / Dark theme
         bg_canvas = "#111418"       # Executive slate obsidian
         border_hairline = "#262C36" # Crisp dark border
         grid_line = "#1C222B"       # Subtle gridlines

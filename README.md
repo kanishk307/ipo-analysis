@@ -1,13 +1,16 @@
 # The IPO Mirage: Why Most New Listings Lose Money for Retail Investors
 
+> **[AI Generated]**
+
 ### Empirical Evidence from Professor Jay Ritter's University of Florida IPO Database
 *(Table 16e: Distribution of 5-Year Buy-and-Hold Returns on IPOs, 1975–2021, N = 9,195)*
 
+[![AI Generated](https://img.shields.io/badge/Status-AI%20Generated-orange.svg)](#)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kanishk307/ipo-analysis/blob/main/ipo_5yr_skew_analysis.ipynb)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Data Source](https://img.shields.io/badge/Data%20Source-Univ.%20of%20Florida%20(Ritter)-990000.svg)](https://site.warrington.ufl.edu/ritter/ipo-data/)
-[![Charts: 300 DPI](https://img.shields.io/badge/Charts-Publication%20Grade%20(300%20DPI)-10B981.svg)](#publication-visualizations)
+[![Charts: 300 DPI](https://img.shields.io/badge/Charts-Publication%20Grade%20(300%20DPI)-10B981.svg)](#visualizations)
 
 ---
 
@@ -40,15 +43,15 @@ The positive arithmetic mean (+37.8%) is an artifact of the power-law right tail
 
 ---
 
-## Publication Visualizations
+## Visualizations
 
-The analysis generates two publication-grade, 300 DPI editorial graphics designed in the style of *The Financial Times* and *The Wall Street Journal* (no AI-cliché pill badges, no neon cyberpunk gradients, pure typographic and data-ink clarity).
+The analysis generates two publication-grade, 300 DPI graphics in light and dark themes (pure typographic and data-ink clarity).
 
-### 1. Financial Times Light Editorial Edition
-![Financial Times Light Editorial Chart](ipo_5yr_skew_chart.png)
+### 1. Light
+![Light Chart](ipo_5yr_skew_chart.png)
 
-### 2. Wall Street Journal / Bloomberg Dark Executive Edition
-![Wall Street Journal Dark Executive Chart](ipo_5yr_skew_chart_dark.png)
+### 2. Dark
+![Dark Chart](ipo_5yr_skew_chart_dark.png)
 
 ---
 
@@ -157,8 +160,8 @@ Institutional investors and syndicate insiders purchase shares at the IPO Offer 
 ipo-analysis/
 ├── ipo_5yr_skew.py             # Single-file production analysis & chart pipeline
 ├── ipo_5yr_skew_analysis.ipynb # Google Colab & Jupyter interactive notebook
-├── ipo_5yr_skew_chart.png      # Financial Times Light Editorial Chart (300 DPI)
-├── ipo_5yr_skew_chart_dark.png # Wall Street Journal Dark Executive Chart (300 DPI)
+├── ipo_5yr_skew_chart.png      # Light Chart (300 DPI)
+├── ipo_5yr_skew_chart_dark.png # Dark Chart (300 DPI)
 ├── ipo_5yr_summary_metrics.csv # Headline metrics table export
 ├── ipo_5yr_return_buckets.csv  # 5-year empirical outcome buckets export
 ├── article_stats_summary.txt   # Formatted text research brief & stats export
@@ -202,10 +205,10 @@ python ipo_5yr_skew.py
 
 #### CLI Options
 ```bash
-# Render only the Financial Times Light Editorial chart
+# Render only the Light chart
 python ipo_5yr_skew.py --theme light
 
-# Render only the Wall Street Journal Dark Executive chart
+# Render only the Dark chart
 python ipo_5yr_skew.py --theme dark
 
 # Run fast offline execution (skips network calls using verified baseline data)
