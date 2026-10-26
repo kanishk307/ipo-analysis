@@ -1,0 +1,9 @@
+# Core Data & Numerical Computing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Publication-Grade Visualization
+matplotlib>=3.7.0
+
+# Live Market Data Ingestion
+yfinance>=0.2.30

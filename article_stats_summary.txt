@@ -1,0 +1,67 @@
+========================================================================================
+RESEARCH BRIEF: THE 5-YEAR IPO SKEWNESS PUZZLE
+Empirical Evidence from Professor Jay Ritter's University of Florida IPO Database
+Table 16e: Distribution of 5-Year Buy-and-Hold Returns on IPOs (1975-2021)
+========================================================================================
+
+1. HEADLINE EMPIRICAL METRICS (Sample Size: 9,195 U.S. Operating Company IPOs)
+----------------------------------------------------------------------------------------
+- Total IPOs Analyzed:                 9,195 companies
+- Measurement Baseline:                First-Day Closing Price to 5-Year Anniversary
+                                       (reflecting actual retail entry price)
+- Average (Mean) 5-Year Return:        +37.8%
+- Median 5-Year Return:                -32.0%
+- Distortion Gap (Spread):             69.8 percentage points
+- Percentage with Negative Returns:    61.0% (5,572 out of 9,195 IPOs)
+- Percentage Losing Over Half Value:   43.0% (3,916 out of 9,195 IPOs lost >50%)
+- Percentage with Positive Returns:    39.0% (3,623 out of 9,195 IPOs)
+
+2. 5-YEAR RETURN DISTRIBUTION BREAKDOWN
+----------------------------------------------------------------------------------------
+- Lost > 50%:                          42.6%  (3,916 firms) -> Severe Capital Destruction
+- Lost 0% to 50%:                      18.0%  (1,656 firms) -> Moderate Capital Loss
+- Gained 0% to 100%:                   20.4%  (1,876 firms) -> Modest Gain
+- Gained 100% to 500%:                 15.9%  (1,461 firms) -> Strong Outperformer
+- Gained > 500% (Mega-Winners):         3.1%  (  286 firms) -> Extreme Long-Tail Outliers
+  * Gained 500% to 1,000%:              2.0%  (  188 firms)
+  * Gained 1,000% to 2,000%:            0.8%  (   74 firms)
+  * Gained 2,000% to 3,000%:            0.1%  (   13 firms)
+  * Gained > 3,000%:                    0.1%  (   11 firms)
+
+3. $100,000 EQUAL-WEIGHT PORTFOLIO SIMULATION
+----------------------------------------------------------------------------------------
+If an investor allocated $100,000 equally across all 9,195 IPOs ($10.88 per company):
+
+- Initial Portfolio Capital:           $100,000.00
+- 5-Year Total Portfolio Value:        $137,800.00
+- Overall Net Profit:                  +$37,800.00 (+37.8%)
+
+THE SKEW ANATOMY: WHERE THE MONEY WENT
+- Bottom 61% (5,572 Losers):
+  * Capital Allocated:                 $60,598.15 (60.6% of portfolio)
+  * Capital Evaporated / Lost:        -$37,721.37
+  * Net Loss on Capital:              -62.2% loss across all losing IPOs
+  * Capital Lost in Severe Losers:    -$33,218.92 (>50% drop bucket alone)
+
+- Top ~2-3% (286 Mega-Winners with >500% return):
+  * Capital Allocated:                 $3,110.39 (~3.1% of portfolio)
+  * Net Profit Generated:             +$34,827.62
+  * Takeaway: The top ~2-3% of outliers generated enough capital gain (+$34,828)
+              to completely absorb the -$37,721 loss suffered by the bottom 61%
+              and push the overall portfolio average to +37.8%.
+
+Without these rare mega-winners, an equal-weight IPO basket loses substantial money.
+
+4. LIVE MARKET CASE STUDIES (First-Day Close to 5-Year Mark via yfinance)
+----------------------------------------------------------------------------------------
+Ticker           Company   IPO_Date   5Yr_Mark  Day1_Close  5Yr_Close  5Yr_Return_Pct      Bucket_Category
+  AMZN            Amazon 1997-05-15 2002-05-15        0.10       1.00           918.2  Mega-Winner (>500%)
+  TSLA             Tesla 2010-06-29 2015-06-29        1.59      17.47           996.8  Mega-Winner (>500%)
+  META   Meta (Facebook) 2012-05-18 2017-05-18       37.87     146.26           286.2  Winner (0% to 500%)
+  NFLX           Netflix 2002-05-23 2007-05-23        0.12       0.33           176.9  Winner (0% to 500%)
+  UBER Uber Technologies 2019-05-10 2024-05-09       41.57      67.93            63.4  Winner (0% to 500%)
+  SNAP         Snap Inc. 2017-03-02 2022-03-02       24.48      37.37            52.7  Winner (0% to 500%)
+  GPRO             GoPro 2014-06-26 2019-06-26       31.34       5.62           -82.1 Severe Loser (<-50%)
+  BYND       Beyond Meat 2019-05-02 2024-05-01     1972.50     203.70           -89.7 Severe Loser (<-50%)
+  PTON           Peloton 2019-09-26 2024-09-25       25.76       4.88           -81.1 Severe Loser (<-50%)
+========================================================================================

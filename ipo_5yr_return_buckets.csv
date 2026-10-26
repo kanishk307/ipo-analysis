@@ -1,0 +1,6 @@
+Return_Bucket,IPO_Count,Percentage_of_Total,Classification,Color
+Lost >50%,3916,42.6,Severe Loss,#991B1B
+Lost 0% to 50%,1656,18.0,Moderate Loss,#EF4444
+Gained 0% to 100%,1876,20.4,Modest Gain,#60A5FA
+Gained 100% to 500%,1461,15.9,Strong Gain,#2563EB
+Gained >500%,286,3.1,Mega-Winner Outlier,#059669
